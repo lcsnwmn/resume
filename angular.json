@@ -73,7 +73,12 @@
           "builder": "@angular/build:unit-test"
         },
         "deploy": {
-          "builder": "angular-cli-ghpages:deploy"
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "https://lcsnw.mn/resume/",
+            "name": "Lucas Newman - Resume 2026",
+            "email": "hi@lcsnw.mn"
+          }
         }
       }
     }
