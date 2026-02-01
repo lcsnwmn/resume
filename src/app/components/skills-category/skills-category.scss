@@ -2,11 +2,20 @@
     display: block;
 }
 
+// li {
+//     padding: 5px;
+//     border-radius: 15px;
+//     border: solid 2px transparent;
+//     background-image: linear-gradient(white, white), 
+//                       linear-gradient(45deg, var(--color-2), var(--color-3));
+//     background-origin: border-box;
+//     background-clip: padding-box, border-box;
+// }
+
 li {
     padding: 5px;
-    //background-color: var(--color-4);
-    border: 1px solid var(--color-3);
-    border-radius: 8px;
+    border-radius: 10px;
+    border: solid 1px var(--text-color-2);
 }
 
 ul {
