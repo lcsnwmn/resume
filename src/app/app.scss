@@ -6,12 +6,9 @@
 .resume-container {
     max-width: 95vw;
     margin: 1em auto;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    column-gap: 1em;
 }
 
 .name {
@@ -19,6 +16,7 @@ header {
     display: flex;
     gap: .15em;
     color: var(--color-1);
+    justify-content: baseline;
 }
 
 .first-name {
@@ -30,30 +28,26 @@ header {
 }
 
 .contact {
-    display: flex;
-    flex-direction: row;
-    max-width: max-content;
-    flex-wrap: wrap;
-}
-
-.body-container {
     display: grid;
-    grid-template-columns: 2fr 5fr;
-    gap: 1rem;
+    grid-template-columns: repeat(4,auto);
+    justify-self: flex-end;
+    align-self: center;
 }
 
-.sidebar {
-    height: fit-content;
+.summary {
+    padding: 0.4em 0em;
 }
 
-.sidebar>div {
-    border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.2);
+@media screen and (max-width: 800px){
+
+    .contact {
+        grid-template-columns: repeat(2, auto);
+    }
 }
 
-@media print {
-    .resume-container {
-        max-width: 1000px;
-        margin: 0 auto;
+@media screen and (max-width: 550px){
+
+    .contact {
+        grid-template-columns: repeat(1, auto);
     }
 }

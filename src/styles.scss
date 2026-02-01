@@ -77,7 +77,7 @@ li {
 }
 
 li::marker {
-  content: "▸ "; /* Adds a star followed by a space */
+  content: "‣ "; /* Adds a star followed by a space */
 }
 
 @media print {
@@ -88,4 +88,6 @@ li::marker {
     a:visited {
         color: var(--text-color-dark);
     }
+
+
 }
