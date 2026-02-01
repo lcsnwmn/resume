@@ -26,7 +26,7 @@ jobs:
       run: |
         npm install
         # Build command: Replace `your-app-name` with the name of your project from angular.json
-        ng build --configuration=production --base-href=/resume/
+        npx ng build --configuration=production --base-href=/resume/
       # The base-href is crucial for correct routing on GitHub Pages
 
     - name: Deploy to GitHub Pages
